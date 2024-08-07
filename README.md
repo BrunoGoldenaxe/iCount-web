@@ -1,27 +1,57 @@
-# Icount
+<h1 align="center">  iCount </h1>
+<p align="center">
+ <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+![icount-high-resolution-logo-transparent](https://github.com/user-attachments/assets/90f95cca-ce71-41f5-8162-696fb9188b10)
 
-## Development server
+<h1> ℹ️ Descição do projeto </h1>
+<p>
+ Projeto em desenvolvimento para aprimoramento de conceitos e técnicas aprendidas durante a vivência no trabalho do dia a dia. iCount é um sistema que a princípio tem por objetivo 
+ o cadastro de contas tanto à receber como à pagar e efetuar os pagamentos e recebimentos bem como os lançamentos das receitas e despesas.
+ O sistema permitirá o usuário cadastrar as contas, controlar seus vencimentos editar as informações e efetuar as baixas de pagamentos.
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+<h1> 🔨 Funcionalidades do projeto </h1>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- `Cadastro de contas`:  o usuário poderá criar uma nova conta.
 
-## Build
+![Captura de tela 2024-08-06 112304](https://github.com/user-attachments/assets/6cdd076c-6219-4a5b-a4d7-6de8866575f6)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+- `Lista de contas`:  o usuário poderá visualizar a lista paginada com as contas criadas, e poderá editar, excluir ou mesmo pagar uma conta.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Captura de tela 2024-08-06 112505](https://github.com/user-attachments/assets/5541b6b1-f969-43a1-bb88-6f77d24c4cb0)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+<h1> 📁 Acesso ao projeto </h1> 
+<p>
+ aqui você poderá acessar o código fonte do projeto inicial ou baixá-lo
+</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<h1> 🛠️ Abrir e rodar o projeto </h1> 
+<p>
+ Após baixar o projeto você pode abrir com a IDE de sua preferência, para efeitos de desenvolvimento foi utilizado o VS Code.
+</p>
+
+ - abra a IDE e na lateral procure pela aba file e em seguida no menu suspenso click em Open Folder e busque o download do projeto no diretório em que foi salvo.
+ - feito isso rodar o o seguinte comando no terminal da aplicaçãp npm run start, e ele será startado via localhost na porta 4200. 
+
+<h1> 💻 Tecnologias utilizadas </h1>
+
+ - `Java 19`
+ - `IntelliJ IDEA`
+ - `MySQL`
+ - `DB Migration`
+ - `Angular`
+ - `Spring boot`
+
+<h1> 🧔 Autor </h1>
+
+
+| [<img loading="lazy" src="https://avatars.githubusercontent.com/u/107106425?v=4" width=115><br><sub>Bruno Alves da Silva</sub>](https://github.com/BrunoGoldenaxe) | 
+| :---: | 
+
+
