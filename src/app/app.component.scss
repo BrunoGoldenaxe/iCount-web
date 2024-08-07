@@ -1,0 +1,54 @@
+.container{
+  padding: 15px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.drawer-container{
+  width: auto;
+  height: 100%;
+  /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+  background: #eee;
+
+
+}
+
+.drawer-content{
+  color: #eee;
+  box-shadow: -10px 0px 10px 1px #000000;
+  background-color: #2196f3 !important;
+}
+
+.toolbar-icon-button{
+  transform: scale(1.5)
+}
+
+.drawer-button{
+  display: inline-flex;
+  font-size: medium;
+  width: 100%;
+  margin: 5px;
+  padding: 10px;
+  align-items: center;
+  color: white !important;
+  transform: scale(1.5)
+
+}
+
+.drawer-button:hover{
+  color: Gainsboro !important;
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+.lista{
+  display: grid;
+  gap: 20px;
+}
+
+
+
+
+
+

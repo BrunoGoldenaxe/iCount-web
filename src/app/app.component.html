@@ -1,0 +1,65 @@
+<mat-toolbar class="toolbar" color="primary">
+  <button mat-button (click)="drawer.toggle()">
+    <mat-icon class="toolbar-icon-button">menu</mat-icon>
+  </button>
+  <span>iCount®</span>
+</mat-toolbar>
+
+<mat-drawer-container class="drawer-container" autosize>
+  <mat-drawer #drawer class="drawer-content" mode="side">
+    <mat-list class="lista" role="list">
+      <div>
+        <mat-list-item class="list-item" role="listitem">
+          <button disabled class="drawer-button" mat-button (click)="home()">
+            <mat-icon matListItemIcon class="drawer-icon">account_circle</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+        <mat-list-item class="list-item" role="listitem">
+          <button class="drawer-button" mat-button (click)="home()" matTooltip="Home">
+            <mat-icon matListItemIcon class="drawer-icon">house</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <button class="drawer-button" mat-button (click)="contabil()" matTooltip="Contábil">
+            <mat-icon matListItemIcon class="drawer-icon">attach_money</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <button class="drawer-button" mat-button (click)="contasPagar()" matTooltip="Pagamentos">
+            <mat-icon matListItemIcon class="drawer-icon">payments</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <button class="drawer-button" mat-button (click)="contasReceber()" matTooltip="Recebimentos">
+            <mat-icon matListItemIcon class="drawer-icon">paid</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-list-item class="list-item" role="listitem">
+          <button class="drawer-button" mat-button matTooltip="Opções">
+            <mat-icon matListItemIcon class="drawer-icon">settings</mat-icon>
+          </button>
+        </mat-list-item>
+        <mat-divider></mat-divider>
+      </div>
+
+      <div>
+        <mat-list-item class="lista" role="listitem">
+          <button class="drawer-button" mat-button onClick="window.open('//google.com')" target="_blank" matTooltip="Sair">
+            <mat-icon matListItemIcon>logout</mat-icon>
+          </button>
+        </mat-list-item>
+      </div>
+    </mat-list>
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+
+
+
+
+

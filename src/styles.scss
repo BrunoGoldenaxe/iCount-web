@@ -1,0 +1,143 @@
+/* You can add global styles to this file, and also import other style files */
+@import '@angular/material/theming';
+@include mat-core();
+
+$custom-app-primary: mat-palette($mat-blue);
+$custom-app-secondary: mat-palette($mat-indigo, A200, A400, 700);
+$custom-app-warn: mat-palette($mat-red);
+
+$custom-theme: mat-light-theme($custom-app-primary, $custom-app-secondary, $custom-app-warn);
+
+@include angular-material-theme($custom-theme);
+
+/* You can add global styles to this file, and also import other style files */
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: rgb(0, 157, 225, 0.3);
+  border-radius: 50px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 157, 225);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-mdc-snack-bar-container.success .mdc-snackbar__surface {
+  background-color: #1db24b !important;
+  color: #fff !important;
+}
+
+.mat-mdc-snack-bar-container.success .mdc-snackbar__surface button {
+  color: #fff !important;
+}
+
+.mat-mdc-snack-bar-container.danger .mdc-snackbar__surface {
+  background-color: #eb445a !important;
+  color: #fff !important;
+}
+
+.mat-mdc-snack-bar-container.danger .mdc-snackbar__surface button {
+  color: #fff !important;
+}
+
+.mat-mdc-snack-bar-container.warning .mdc-snackbar__surface {
+  background-color: #f5a623 !important;
+  color: #fff !important;
+}
+
+.mat-mdc-snack-bar-container.warning .mdc-snackbar__surface button {
+  color: #fff !important;
+}
+
+
+.mat-mdc-header-row {
+  color: rgb(0, 157, 225) !important;
+  font-weight: 400;
+}
+
+.mat-mdc-cell {
+  color: Gray !important;
+  font-family: var(--mdc-typography-button-font-family, var(--mdc-typography-font-family, Roboto, sans-serif)) !important;
+  font-size: 13px !important;
+}
+
+.mdc-text-field .mdc-floating-label {
+  font-size: 14px !important;
+}
+
+.icon-home{
+  color: Gray !important;
+  transform: scale(4);
+}
+
+.card-content-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card-content{
+  float: left;
+  width: 50%;
+  height: 50vh;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+table {
+  overflow: auto;
+  width: 100%;
+}
+
+.toolbar-icon{
+  padding-right: 10px;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  background: #eee;
+}
+
+.example-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ mat-mdc-header-cell {
+  background: inherit;
+  display:flex;
+  justify-content:flex-end;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.content{
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+
+
+
+
+
+
+
+

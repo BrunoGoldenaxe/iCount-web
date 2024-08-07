@@ -1,0 +1,89 @@
+<mat-toolbar color="primary">
+  <mat-icon class="toolbar-icon" aria-hidden="false" aria-label="Example settings icon" fontIcon="check_circle"></mat-icon>
+  Contas pagas
+</mat-toolbar>
+
+<mat-form-field class="full-width">
+  <mat-label>Filtro</mat-label>
+  <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Enel" #input>
+</mat-form-field>
+
+<div class="mat-elevation-z8 container">
+    <div>
+      <table mat-table [dataSource]="dataSource" matSort class="mat-table">
+
+        <!-- cliente Column -->
+        <ng-container matColumnDef="cliente">
+          <th class="table-header" mat-header-cell *matHeaderCellDef mat-sort-header> Cliente </th>class="table-header"
+          <td mat-cell *matCellDef="let conta"> {{conta.cliente}} </td>
+        </ng-container>
+
+        <!-- observacao Column -->
+        <ng-container matColumnDef="observacao">
+          <th class="table-header" mat-header-cell *matHeaderCellDef> Observação </th>class="table-header"
+          <td mat-cell *matCellDef="let conta"> {{conta.observacao}} </td>
+        </ng-container>
+
+        <!-- centroCusto Column -->
+        <ng-container matColumnDef="centroCusto">
+          <th class="table-header" mat-header-cell *matHeaderCellDef> Centro de Custo </th>class="table-header"
+          <td mat-cell *matCellDef="let conta"> {{conta.centroCusto}} </td>
+        </ng-container>
+
+        <!-- valPago Column -->
+        <ng-container matColumnDef="valPago">
+          <th class="table-header" mat-header-cell *matHeaderCellDef> Valor pago </th>class="table-header"
+          <td mat-cell *matCellDef="let conta"> {{ conta.valPago | currency: 'BRL' : 'symbol' }} </td>
+        </ng-container>
+
+        <!-- dtPagamento Column -->
+        <ng-container matColumnDef="dtPagamento">
+          <th class="table-header" mat-header-cell *matHeaderCellDef> Pagamento </th>class="table-header"
+          <td mat-cell *matCellDef="let conta"> {{ conta.dtPagamento }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="acoes">
+          <th class="table-header" mat-header-cell *matHeaderCellDef></th>class="table-header"
+          <td
+            mat-cell
+            *matCellDef="let conta"
+            class="mat-cell-center-bordered"
+          >
+            <div class="example-flex-container">
+              <button mat-icon-button color="primary"
+
+              >
+                <mat-icon>info</mat-icon>
+              </button>
+            </div>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+    </div>
+
+    <div class="loading" *ngIf="loading">
+      <mat-spinner></mat-spinner>
+    </div>
+
+    <mat-card appearance="outlined">
+      <mat-card-content>
+        <button mat-button color="warn" aria-label="voltar"
+            (click)="voltar()">
+            <mat-icon>undo</mat-icon>
+            voltar
+          </button>
+      </mat-card-content>
+    </mat-card>
+
+  <mat-paginator
+    [length]="totalElements"
+    [pageSize]="5"
+    (page)="changePage($event)"
+    >
+  </mat-paginator>
+</div>
+
+
