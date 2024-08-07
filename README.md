@@ -37,7 +37,7 @@
 </p>
 
  - abra a IDE e na lateral procure pela aba file e em seguida no menu suspenso click em Open Folder e busque o download do projeto no diretório em que foi salvo.
- - feito isso rodar o o seguinte comando no terminal da aplicaçãp npm run start, e ele será startado via localhost na porta 4200. 
+ - feito isso rodar o o seguinte comando no terminal da aplicação npm run start, e ele será startado via localhost na porta 4200. 
 
 <h1> 💻 Tecnologias utilizadas </h1>
 
